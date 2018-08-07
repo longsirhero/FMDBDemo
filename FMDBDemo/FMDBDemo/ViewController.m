@@ -257,7 +257,13 @@
     
 }
 
+// MARK: - 加解密
+/*
+使用SQLCipher进行加密，改之前的pod 'FMDB'为pod 'FMDB/SQLCipher' # FMDB with SQLCipher 即可以用cocoapods来安装支持SQLCipher加密数据库的FMDB
 
+使用-[FMDatabase setKey:]和-[FMDatabase setKeyWithData:]
+来给数据库设置密码或者清除密码，使用- [FMDatabase rekey:]和- [FMDatabase rekeyWithData:]输入数据库密码以求验证用户身份。
+*/
 
 
 
